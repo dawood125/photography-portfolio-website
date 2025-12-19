@@ -1,29 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  
-  const hamburger = document.querySelector(".hamburger");
-  const navLinks = document.querySelector(".nav-links");
-  const links = document.querySelectorAll(".nav-links li");
-
-  if (hamburger) {
-    hamburger.addEventListener("click", () => {
-      
-      navLinks.classList.toggle("open");
-
-      
-      links.forEach((link, index) => {
-        if (link.style.animation) {
-          link.style.animation = "";
-        } else {
-          link.style.animation = `navLinkFade 0.5s ease forwards ${
-            index / 7 + 0.3
-          }s`;
-        }
-      });
-
-      
-      hamburger.classList.toggle("toggle");
-    });
-  }
 
  
   const galleryImages = document.querySelectorAll(".photo-item img");
